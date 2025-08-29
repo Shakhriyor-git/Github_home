@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shahriyor Portfolio</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #121212;
+      color: #e0e0e0;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    /* Title with white glow */
+    header h1 {
+      font-size: 3rem;
+      color: #fff;
+      text-shadow:
+        0 0 20px #fff,
+        0 0 50px #bb00ff;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #cba1ff;
+    }
+
+    section {
+      max-width: 700px;
+      width: 100%;
+      background: #1f1f1f;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 12px #bb00ff88;
+    }
+
+    section h2 {
+      color: #bb00ff;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #bb00ff;
+      padding-bottom: 5px;
+      text-shadow: 0 0 5px #bb00ffaa;
+    }
+
+    ul.skills-list {
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    /* Skills: white text with subtle inner purple stroke */
+    ul.skills-list li {
+      background: #333;
+      padding: 8px 15px;
+      border-radius: 5px;
+      font-weight: 600;
+      color: #fff;
+      position: relative;
+      cursor: pointer;
+      /* inner glow effect using text-shadow */
+      text-shadow:
+        0 0 3px #bb00ff,
+        0 0 6px #bb00ff;
+      box-shadow: 0 0 6px #bb00ffaa;
+      transition: background-color 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 1rem;
+    }
+
+    /* Emoji container, initially hidden */
+    ul.skills-list li .emoji {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      font-size: 1.3rem;
+      user-select: none;
+    }
+
+    /* Show emoji on hover */
+    ul.skills-list li:hover .emoji {
+      opacity: 1;
+    }
+
+    /* Background color change on hover */
+    ul.skills-list li:hover {
+      background-color: #4b0082;
+      box-shadow: 0 0 12px #bb00ffcc;
+    }
+
+    footer {
+      margin-top: auto;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    a {
+      color: #bb00ff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #e1b3ff;
+      text-shadow: 0 0 8px #bb00ff;
+    }
+
+    /* Responsive */
+    @media (max-width: 500px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Shahriyor</h1>
+    <p>B.Tech Student | AI & Machine Learning Enthusiast</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I am a third-year B.Tech student specializing in Artificial Intelligence and Machine Learning. Passionate about creating AI/ML models and exploring data science. Skilled in Python, SQL, Matlab, Django, Tableau, TensorFlow, and other tools.
+    </p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li><span class="emoji">🐍</span>Python</li>
+      <li><span class="emoji">🗄️</span>SQL</li>
+      <li><span class="emoji">📊</span>Matlab</li>
+      <li><span class="emoji">🌐</span>Django</li>
+      <li><span class="emoji">📈</span>Tableau</li>
+      <li><span class="emoji">🤖</span>TensorFlow</li>
+      <li><span class="emoji">📚</span>scikit-learn</li>
+      <li><span class="emoji">🐼</span>pandas</li>
+      <li><span class="emoji">🎨</span>Photoshop</li>
+      <li><span class="emoji">🎬</span>Premiere Pro</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>You can reach me at: <a href="mailto:shakhric@example.com">shakhric@example.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/mrshakhriyor0106" target="_blank">linkedin.com/in/mrshakhriyor0106</a></p>
+    <p>GitHub: <a href="https://github.com/Shakhriyor-git" target="_blank">github.com/Shakhriyor-git</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Shahriyor. All rights reserved.
+  </footer>
+
+</body>
+</html>
